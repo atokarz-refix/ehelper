@@ -25,7 +25,9 @@ function rfx_page_title()
 	<!-- START #rfx_page_title -->
 	<div id="rfx_page_title">
 		<div class="rfx_page_title_wrapper <?php echo $wrapper_classes ?>" style="<?php echo $container_width ?>">
-			<?php do_action('rfx_page_title_action') ?>
+			<?php do_action('rfx_page_title_action');
+			?><h1 class="page-title__h1"><?php echo get_the_title(); ?></h1><?php
+			?>
 		</div>
 	</div>
 	<!-- KONIEC #rfx_page_title -->

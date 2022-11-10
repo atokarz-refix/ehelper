@@ -39,38 +39,43 @@ if (!$slider_repeater) {
 
 
 
-function rfx_acf_slide_html($index, $slide)
-{
-    ob_start();
-    $wrapper_styles = 'height:100%;';
-    $wrapper_styles .= 'background-image:url(' . $slide['slide_background'] . ');';
+if (!function_exists('rfx_acf_slide_html')) {
+    function rfx_acf_slide_html($index, $slide)
+    {
+        ob_start();
+        $wrapper_styles = 'height:100%;';
+        $wrapper_styles .= 'background-image:url(' . $slide['slide_background'] . ');';
 ?>
-    <div class="rfx_acf_slide_item" slide="<?php echo $index ?>" style="<?php echo $wrapper_styles ?>">
-        <div class="rfx_acf_slide_wrapper" style="max-width:<?php echo get_field('szerokosc_kontenera', 'options') ?>px; margin:0 auto;">
-            <div class="rfx_acf_slide_content">
-                <?php echo $slide['slide_content'] ?>
+        <div class="rfx_acf_slide_item" slide="<?php echo $index ?>" style="<?php echo $wrapper_styles ?>">
+            <div class="rfx_acf_slide_wrapper" style="max-width:<?php echo get_field('szerokosc_kontenera', 'options') ?>px; margin:0 auto;">
+                <div class="rfx_acf_slide_content">
+                    <?php echo $slide['slide_content'] ?>
+                </div>
             </div>
         </div>
-    </div>
+    <?php
+        $output = ob_get_clean();
+        $output = str_replace("\n", "", $output);
+        $output = str_replace("\r", "", $output);
+        return $output;
+    } //rfx_acf_slide_html
+}//if
+
+
+
+if (!function_exists('rfx_acf_slider_buttons')) {
+
+    function rfx_acf_slider_buttons($slider_repeater)
+    {
+        if (count($slider_repeater) == 1) return;
+    ?>
+        <div class="rfx_acf_slider_buttons">
+            <span class="prev"> &#8249; </span>
+            <span class="next"> &#8250; </span>
+        </div>
 <?php
-    $output = ob_get_clean();
-    $output = str_replace("\n", "", $output);
-    $output = str_replace("\r", "", $output);
-    return $output;
-} //rfx_acf_slide_html
-
-
-
-function rfx_acf_slider_buttons($slider_repeater)
-{
-?>
-    <div class="rfx_acf_slider_buttons">
-        <span class="prev"> &#8249; </span>
-        <span class="next"> &#8250; </span>
-    </div>
-<?php
-} //rfx_acf_slider_buttons()
-
+    } //rfx_acf_slider_buttons()
+}//if
 
 
 

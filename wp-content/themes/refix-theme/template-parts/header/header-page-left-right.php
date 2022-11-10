@@ -9,7 +9,14 @@ $header_right_width = 'width:' . get_field('header_szerokosc_right', 'options') 
 
 ?>
 <div class="header-left" style="<?php echo esc_attr($header_left_width); ?>">
-    <?php the_custom_logo(); ?>
+    <?php if (is_front_page()) {
+
+        echo '<a href="/"><img src="/ehelper/wp-content/uploads/2022/11/logo-biale-01.webp" style="margin-top: 15px"></a>';
+    } else {
+        the_custom_logo();
+    }
+    ?>
+
 </div>
 <div class="header-right" style="<?php echo esc_attr($header_right_width); ?>">
     <?php if (mobile_check()) echo '<span id="menu-opener"></span>'; ?>

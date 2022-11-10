@@ -1,3 +1,4 @@
+
 /* ------ header & slider ------- */
 body {
   font-family: var(--font-family-content);
@@ -18,8 +19,23 @@ body {
   padding: 0 !important;
 }
 .header-right ul li a {
+  color: black !important;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.home .header-right ul li a {
   color: white !important;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+.header-right ul li.current_page_item a{
+  color: #25a5bd !important;
+}
+.home .header-right ul li a:hover{
+  color:#1f2641 !important;
+}
+.header-right ul li a:hover {
+  color: #25a5bd !important;
 }
 #site-navigation .primary-menu-container a {
   font-size: 16px;
@@ -54,9 +70,10 @@ body {
   padding: 7px 25px;
   border-radius: 25px;
   margin-right: 15px;
+  transition: 0.2s;
 }
 .start__system__buttons--btn-jak-dziala:hover {
-  box-shadow: 0px 0px 15px -7px rgba(255, 161, 50, 1);
+  box-shadow: 0px 0px 15px -4px rgba(255, 161, 50, 1);
 }
 .start__system__buttons--btn-dla-kogo {
   text-decoration: none;
@@ -64,15 +81,16 @@ body {
   padding: 7px 25px;
   border-radius: 25px;
   border: 1px solid var(--color-orange);
+  transition: 0.2s;
 }
 .start__system__buttons--btn-dla-kogo:hover {
-  box-shadow: 0px 0px 15px -7px rgba(255, 161, 50, 1);
+  box-shadow: 0px 0px 15px -4px rgba(255, 161, 50, 1);
 }
 
 /* ---------- start-oferta ---------- */
 
 #start__oferta__section {
-  background-image: url("/ehelper/wp-content/uploads/2022/11/co-oferuje-system-ehelper.jpg");
+  background-image: url("/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp");
   background-size: cover;
 }
 .title-01 {
@@ -80,18 +98,25 @@ body {
   color: #1d71b8;
   text-transform: uppercase;
 }
+.title-02 {
+  color: #1d71b8;
+  text-transform: uppercase;
+  font-size: 32px;
+}
 .start__oferta__section__box--icon {
   width: 60px;
 }
 .start__oferta__section__box {
   flex-direction: column;
   display: flex;
-  justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.3);
   padding: 20px;
   box-shadow: 0px 0px 56px -32px rgba(23, 23, 23, 1);
   margin: 15px 0;
+  min-height: 250px;
+  border-radius: 5px;
+  padding-top: 40px;
 }
 .start__oferta__section__box--title {
   text-transform: uppercase;
@@ -126,6 +151,10 @@ body {
 .start__kontakt__sekcja__kontakt__icon-box--dane a {
   color: white;
   text-decoration: none;
+  transition: .2s;
+}
+.start__kontakt__sekcja__kontakt__icon-box--dane a:hover {
+  color: #1f2641 !important;
 }
 .start__kontakt__sekcja__kontakt h3 {
   font-size: 46px;
@@ -158,6 +187,7 @@ body {
   border-bottom: 1px solid white;
   height: 30px;
   width: 360px;
+  color: white;
 }
 .start__kontakt__sekcja__form--input label span .wpcf7-textarea {
   height: 70px !important;
@@ -170,12 +200,15 @@ body {
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.2s;
 }
 .start__kontakt__sekcja__form--wysij {
   text-align: center;
   margin: 20px 0;
 }
-
+.start__kontakt__sekcja__form--wysij .wpcf7-submit:hover {
+  box-shadow: 0px 0px 15px -4px rgba(255, 255, 250, 1);
+}
 /* ---------- footer -------- */
 .site-footer {
   background-color: #1f2641;
@@ -197,34 +230,149 @@ body {
   display: flex;
   flex-direction: column;
 }
-.footer__section__linki b, .footer__section__play b{
-    color: white;
-    margin-bottom: 25px;
+.footer__section__linki b,
+.footer__section__play b {
+  color: white;
+  margin-bottom: 25px;
 }
-.footer__section__linki a{
-    color: white;
-    text-decoration: none;
-    margin: 6px 0;
+.footer__section__linki a {
+  color: white;
+  text-decoration: none;
+  margin: 6px 0;
 }
-.footer__section__linki a::before{
-    content: '> ';
-    color: #FFA132;
-    margin-right: 5px;
+.footer__section__linki a::before {
+  content: "> ";
+  color: #ffa132;
+  margin-right: 5px;
 }
-.footer__section__logo p{
-    color: white;
+.footer__section__logo p {
+  color: white;
+  width: 35%;
+  text-align: center;
 }
-.footer__copyright{
-    text-align: center;
-    padding: 10px 0;
+.footer__copyright {
+  text-align: center;
+  padding: 10px 0;
 }
-.footer__copyright a{
-    color: white;
-    text-decoration: none;
+.footer__copyright a {
+  color: white;
+  text-decoration: none;
 }
-.footer__section__play a img{
-    margin-top: 25px;
+.footer__section__play a img {
+  margin-top: 25px;
 }
-.footer__section__linki a:hover{
-    color: var(--color-orange);
+.footer__section__linki a:hover {
+  color: var(--color-orange);
+}
+/* ---------- page title ---------- */
+
+#rfx_page_title {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/page-title-01.webp");
+  height: 253px;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rfx_page_title h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* ---------- jak to dziala ---------- */
+.jak-dziala__img {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/jak-dziala-01.webp");
+  position: relative;
+  min-height: 490px;
+  background-repeat: no-repeat;
+}
+.jak-dziala__img > img:nth-child(1) {
+  position: absolute;
+  right: 30px;
+  bottom: -110px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#co-oferuje__section {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#co-oferuje__section .co-oferuje__box {
+  flex-direction: column;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0px 0px 56px -32px rgba(23, 23, 23, 1);
+  margin: 15px 0;
+  border-radius: 10px;
+}
+.co-oferuje__box{
+  min-height: 500px;
+}
+.co-oferuje__box--img{
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.co-oferuje__box b{
+  margin-top: 20px;
+}
+.co-oferuje__box p{
+  color: #464646;
+  text-align: center;
+}
+.page__title--title02 p {
+  color: #1d71b8;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* ---------- dla kogo ------------- */
+
+.dla__kogo__img {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/dla-osob-prywatnych-01.webp");
+  position: relative;
+  min-height: 490px;
+  background-repeat: no-repeat;
+  box-shadow: -73px -72px 24px -77px rgba(207,207,207,1);
+}
+.dla__kogo__img > img:nth-child(1) {
+  position: absolute;
+  right: 30px;
+  bottom: -110px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#dla-organizacji__section{
+  background-image: url('/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -30px;
+}
+.korzysci__box--ikona img{
+  width: 68px;
+  height: 68px;
+  margin-bottom: 10px;
+}
+.korzysci__box{
+  text-align: center;
+  min-height: 260px;
+  border-radius: 5px;
+  padding: 0 20px;
+  padding-top: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#dla-kogo__kontakt__section{
+  background-image: url('/ehelper/wp-content/uploads/2022/11/kontakt-02.webp');
+}
+@media (max-width: 767px){
+  .flex-mobile{
+    flex-direction: column;
+  }
 }
