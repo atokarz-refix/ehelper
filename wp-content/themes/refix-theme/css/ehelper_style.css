@@ -1,4 +1,3 @@
-
 /* ------ header & slider ------- */
 body {
   font-family: var(--font-family-content);
@@ -28,11 +27,11 @@ body {
   text-transform: uppercase;
   transition: 0.3s;
 }
-.header-right ul li.current_page_item a{
+.header-right ul li.current_page_item a {
   color: #25a5bd !important;
 }
-.home .header-right ul li a:hover{
-  color:#1f2641 !important;
+.home .header-right ul li a:hover {
+  color: #1f2641 !important;
 }
 .header-right ul li a:hover {
   color: #25a5bd !important;
@@ -151,7 +150,7 @@ body {
 .start__kontakt__sekcja__kontakt__icon-box--dane a {
   color: white;
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 .start__kontakt__sekcja__kontakt__icon-box--dane a:hover {
   color: #1f2641 !important;
@@ -310,19 +309,19 @@ body {
   margin: 15px 0;
   border-radius: 10px;
 }
-.co-oferuje__box{
+.co-oferuje__box {
   min-height: 500px;
 }
-.co-oferuje__box--img{
+.co-oferuje__box--img {
   height: 160px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.co-oferuje__box b{
+.co-oferuje__box b {
   margin-top: 20px;
 }
-.co-oferuje__box p{
+.co-oferuje__box p {
   color: #464646;
   text-align: center;
 }
@@ -340,7 +339,7 @@ body {
   position: relative;
   min-height: 490px;
   background-repeat: no-repeat;
-  box-shadow: -73px -72px 24px -77px rgba(207,207,207,1);
+  box-shadow: -73px -72px 24px -77px rgba(207, 207, 207, 1);
 }
 .dla__kogo__img > img:nth-child(1) {
   position: absolute;
@@ -349,18 +348,18 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#dla-organizacji__section{
-  background-image: url('/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp');
+#dla-organizacji__section {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp");
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -30px;
 }
-.korzysci__box--ikona img{
+.korzysci__box--ikona img {
   width: 68px;
   height: 68px;
   margin-bottom: 10px;
 }
-.korzysci__box{
+.korzysci__box {
   text-align: center;
   min-height: 260px;
   border-radius: 5px;
@@ -368,11 +367,141 @@ body {
   padding-top: 60px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-#dla-kogo__kontakt__section{
-  background-image: url('/ehelper/wp-content/uploads/2022/11/kontakt-02.webp');
+#dla-kogo__kontakt__section {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/kontakt-02.webp");
 }
-@media (max-width: 767px){
-  .flex-mobile{
+@media (max-width: 767px) {
+  .flex-mobile {
     flex-direction: column;
+  }
+  .bv_mobile-menu {
+    background: #1f2641;
+  }
+  .header-right ul li a {
+    color: white !important;
+  }
+  .header-right ul li {
+    margin: 10px 0;
+  }
+  .rfx_acf_slide_content {
+    width: 100% !important;
+  }
+  .rfx_acf_slider_contener {
+    height: 350px !important;
+  }
+  .slider--text {
+    padding: 0 20px;
+    margin-top: 70px;
+  }
+  .slider--text h2 {
+    font-size: 22px !important;
+    line-height: 25px !important;
+  }
+  .rfx_acf_slide_wrapper {
+    justify-content: center;
+  }
+  .slider--text > p {
+    font-size: 13px;
+  }
+  #start__system__column {
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  .wp-block-spacer {
+    display: none;
+  }
+  .start__system__buttons {
+    margin-bottom: 50px;
+  }
+  .start__oferta__section__box {
+    margin: 10px 30px;
+  }
+  #start__oferta__section {
+    padding: 30px 0;
+  }
+  .title-01 {
+    padding: 0 20px;
+    font-size: 23px !important;
+  }
+  .start__system {
+    margin-top: -50px;
+  }
+  #start__kontakt__sekcja {
+    padding: 0 20px;
+  }
+  .start__kontakt__sekcja__form--input label {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .start__kontakt__sekcja__form--input label p:nth-of-type(1) {
+    margin: 0;
+  }
+  .start__kontakt__sekcja__form--input label span .wpcf7-form-control {
+    width: 200px !important;
+  }
+  .start__kontakt__sekcja__form--wysij {
+    text-align: left;
+  }
+  .footer__section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__section__logo p {
+    width: 100%;
+  }
+  .footer__section__play {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__section__linki b,
+  .footer__section__play b {
+    margin-bottom: 5px !important;
+    margin-top: 38px !important;
+  }
+  .custom-logo {
+    margin-top: 15px;
+  }
+  .rfx_acf_slider_contener {
+    margin-top: 90px;
+  }
+  #rfx_page_title h1 {
+    font-size: 24px !important;
+  }
+  #rfx_page_title {
+    height: 130px !important;
+  }
+  #header-wrapper {
+    padding-bottom: 10px;
+  }
+  .jak-dziala__img > img:nth-child(1) {
+    display: none;
+  }
+  #jak-dziala__section {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  #co-oferuje__section, #dla-os-prywatnych__section, #dla-organizacji__section {
+    margin: 20px;
+  }
+  #co-oferuje__section{
+    background: unset !important;
+  }
+  .co-oferuje__box b{
+    text-align: center;
+  }
+  .start__kontakt__sekcja__kontakt{
+    padding-top: 30px;
+  }
+  .dla__kogo__img img{
+    display: none;
+  }
+  .korzysci__box{
+    margin: 0 20px;
+  }
+  #dla-organizacji__section{
+    background: unset !important;
+  }
+  .page__title--title02{
+    margin: 20px 0;
   }
 }
