@@ -370,6 +370,82 @@ body {
 #dla-kogo__kontakt__section {
   background-image: url("/ehelper/wp-content/uploads/2022/11/kontakt-02.webp");
 }
+.home .header-right li.current-menu-item a {
+  color: #1f2641 !important;
+}
+#onas__section {
+  background-image: url("/ehelper/wp-content/uploads/2022/11/co-oferuje-ehelper-01.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#onas__section ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+#onas__section ul li::before {
+  content: "> ";
+  font-size: 18px;
+  color: #ffa132;
+  font-weight: bold;
+  margin-right: 4px;
+}
+#kontakt__section
+  .start__kontakt__sekcja__form--input
+  label
+  span
+  .wpcf7-form-control {
+  width: 470px;
+  border-radius: 3px;
+}
+#kontakt__section .start__kontakt__sekcja__form h3,
+#kontakt__section .start__kontakt__sekcja__form h4 {
+  text-align: center;
+}
+#kontakt__section .start__kontakt__sekcja__form {
+  background: #1f2641;
+  padding: 50px 30px;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#kontakt__section .start__kontakt__sekcja__form--wysij .wpcf7-spinner {
+  display: block !important;
+}
+#kontakt__section .start__kontakt__sekcja__form--input label p:nth-of-type(1) {
+  flex-basis: 20% !important;
+}
+.kontakt__info .start__kontakt__sekcja__kontakt__icon-box {
+  color: #1f2641;
+}
+.kontakt__info .start__kontakt__sekcja__kontakt__icon-box--dane a {
+  color: #1f2641;
+}
+.kontakt__info .start__kontakt__sekcja__kontakt__icon-box--dane a:hover {
+  color: var(--color-orange) !important;
+}
+.kontakt__info .start__kontakt__sekcja__kontakt__icon-box--ikona {
+  background: #f6f6f6;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.kontakt__info {
+  margin-bottom: 35px;
+}
+.kontakt__info__mapa iframe{
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 767px) {
   .flex-mobile {
     flex-direction: column;
@@ -480,28 +556,33 @@ body {
     padding: 0 20px;
     margin-top: 20px;
   }
-  #co-oferuje__section, #dla-os-prywatnych__section, #dla-organizacji__section {
+  #co-oferuje__section,
+  #dla-os-prywatnych__section,
+  #dla-organizacji__section {
     margin: 20px;
   }
-  #co-oferuje__section{
+  #co-oferuje__section {
     background: unset !important;
   }
-  .co-oferuje__box b{
+  .co-oferuje__box b {
     text-align: center;
   }
-  .start__kontakt__sekcja__kontakt{
+  .start__kontakt__sekcja__kontakt {
     padding-top: 30px;
   }
-  .dla__kogo__img img{
+  .dla__kogo__img img {
     display: none;
   }
-  .korzysci__box{
+  .korzysci__box {
     margin: 0 20px;
   }
-  #dla-organizacji__section{
+  #dla-organizacji__section {
     background: unset !important;
   }
-  .page__title--title02{
+  .page__title--title02 {
     margin: 20px 0;
+  }
+  #onas__section {
+    padding: 0 20px;
   }
 }
